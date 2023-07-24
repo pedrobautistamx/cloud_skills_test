@@ -50,3 +50,6 @@ terraform apply
 
 
 
+## Evaluation Answers
+
+You can find the answer to the technical test at [EVALUATION.md](./EVALUATION.md)
