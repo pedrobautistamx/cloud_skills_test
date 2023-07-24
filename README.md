@@ -13,16 +13,15 @@ This document provides an overview of the infrastructure created using Terraform
 
 ## Project Structure
 
-- `cloud_storage.tf`: Contains the Terraform configuration to create a Cloud Storage Bucket for storing data and objects. A bucket policy has been applied to allow read access to all users (`allUsers`) in order to read objects from the bucket.
-- `cloud_vpc.tf`: Create a Virtual Private Cloud (VPC) network that acts as the foundation for the entire infrastructure and enables communication between resources within the network.
-- `provider.tf`: The Google provider is used to configure your Google Cloud Platform infrastructure.
-- `provider.tf`: Define Google as a provider and set service account credential for terraform.
-- `subnets.tf`: Create 3 subnets within the `my-vpc-test` network and are used to isolate resources based on their functionality.
-- `security_group.tf`:Create a firewall rule that control inbound and outbound traffic for each subnet, allowing only HTTP and HTTPS access.
+- [cloud_storage.tf](./cloud_storage.tf) : Contains the Terraform configuration to create a Cloud Storage Bucket for storing data and objects. A bucket policy has been applied to allow read access to all users (`allUsers`) in order to read objects from the bucket.
+- [cloud_vpc.tf](./cloud_vpc.tf): Create a Virtual Private Cloud (VPC) network that acts as the foundation for the entire infrastructure and enables communication between resources within the network.
+- [provider.tf](./provider.tf) : Define Google as a provider and set service account credential for terraform.
+- [subnets.tf](./subnets.tf) : Create 3 subnets within the `my-vpc-test` network and are used to isolate resources based on their functionality.
+- [security_group.tf](./security_group.tf) : Create a firewall rule that control inbound and outbound traffic for each subnet, allowing only HTTP and HTTPS access.
 
-- `terraform.tfvars`: A file to store the values of variables used in the Terraform configuration. (Not included in the sample for simplicity)
-- `variables.tf`: Declares the input variables used in the Terraform configuration.
-- `README.md`: This file, providing an overview and documentation for the project.
+- [terraform.tfvars](./terraform.tfvars) : A file to store the values of variables used in the Terraform configuration. (Not included in the sample for simplicity)
+- [variables.tf](./variables.tf) : Declares the input variables used in the Terraform configuration.
+- [README.md](./README.md) : This file, providing an overview and documentation for the project.
 
 
 ## Summary
@@ -53,3 +52,4 @@ terraform apply
 ## Evaluation Answers
 
 You can find the answer to the technical test at [EVALUATION.md](./EVALUATION.md)
+
